@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movemnt Of Circle</title>
+    <style>
+        .container {
+            border: 2px solid;
+            height: 70vh;
+            width: 68vw;
+            background-color: aqua;
+            position: relative;
+            box-shadow: 30px 30px 50px royalblue inset;
+        }
+        
+        .Circle {
+            border: 2px solid;
+            height: 88px;
+            width: 88px;
+            background-color: red;
+            border-radius: 50%;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            /* animation: circle 10s steps(10, end) infinite alternate-reverse; */
+            animation: circle 10s ease infinite;
+            box-shadow: 10px 10px 50px rgb(70, 1, 208);
+        }
+        /* @keyframes circle {
+            0% {
+                transform: translateY(0);
+            }
+            20% {
+                transform: translateY(-40vh) translateX(10vw);
+            }
+            25% {
+                transform: translateX(10vw);
+            }
+            30% {
+                transform: translateY(-40vh) translateX(20vw);
+            }
+            35% {
+                transform: translateX(40vh);
+            }
+            40% {
+                transform: translateY(-40vh) translateX(30vw);
+            }
+            50% {
+                transform: translateY(30vw) translateX(40vw);
+            }
+            55% {
+                transform: translateY(-40vh) translateX(30vw);
+    } }*/
+        
+        @keyframes circle {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            /* one line complete */
+            10% {
+                transform: translateY(-40vh) translateX(10vw);
+            }
+            /* second line complete one round complete*/
+            15% {
+                transform: translateX(10vw);
+            }
+            /* second start */
+            20% {
+                transform: translateY(-40vh) translateX(20vw);
+            }
+            /* second round complete */
+            25% {
+                transform: translateX(20vw);
+            }
+            /* start third */
+            30% {
+                transform: translateY(-40vh) translateX(30vw);
+            }
+            /* third complete */
+            35% {
+                transform: translateX(30vw);
+            }
+            /* fourth start */
+            40% {
+                transform: translateY(-40vh) translateX(40vw);
+            }
+            /* fourth complete */
+            50% {
+                transform: translateX(40vw);
+            }
+            /* fifth start */
+            55% {
+                transform: translateY(-49vh) translateX(50vw);
+            }
+            /* fifth complete */
+            60% {
+                transform: translateX(50vw);
+            }
+            /* sixth start */
+            70% {
+                transform: translateY(-40vh) translateX(60vw);
+            }
+            /* sixth complete */
+            75% {
+                transform: translateX(60vw);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Circle"></div>
+    </div>
+</body>
+
+</html>
